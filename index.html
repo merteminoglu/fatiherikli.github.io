@@ -23,17 +23,22 @@
       font-weight: normal;
       color: gray;
     }
+    section > * {
+      transform: rotate(0.2deg);
+    }
+
     section {
+      transform: rotate(-0.2deg);
       background-image: 
         linear-gradient(
           to right,
-          #40e0d02b 1px,
-          transparent 1px
+          #40e0d02b 0.09em,
+          transparent 0.09em
         ),
         linear-gradient(
           to bottom,
-          #40e0d02b 1px,
-          transparent 1px
+          #40e0d02b 0.09em,
+          transparent 0.09em
         );
       background-size: 0.6em 0.6em;
       padding: 1em;
@@ -47,6 +52,28 @@
     time {
       color: turquoise;
     }
+
+    p code {
+      background: #daf02136;
+      font: inherit;
+      border-bottom: 0.1em solid lightgreen;
+    }
+
+    p a {
+      color: black;
+      text-decoration: none;
+      background: #00ffff1a;
+      border-bottom: 0.1em solid cyan;
+    }
+
+    p a:hover {
+      background-color: black;
+      color: white;
+    }
+
+    p a:active {
+      color: magenta;
+    }
   </style>
 </head>
 <body>
@@ -58,7 +85,7 @@
   </p>
   <h3>eski blog yazıtları</h3>
   <p>
-    bu blog yazısı bir önceki blog yazılarımdan biraz daha farklı olarak, bir yayın halinde değil, bir index halinde olacak. bir sonraki blog yazılarımı ise bu blog yazısı, yani anasayfa üzerinden güncelleme geçerek yayınlayacağım. sanırım şu an için en az uğraştırıcı ve kalıcı yöntem bu aklıma gelen.
+    bu blog yazısı bir önceki blog yazılarımdan biraz daha farklı olarak, bir yayın halinde değil, bir index halinde olacak. bir sonraki blog yazılarımı ise bu blog yazısı, yani anasayfa üzerinden güncelleme geçerek yayınlayacağım. sanırım şu an için en az-uğraştırıcı ve kalıcı yöntem bu aklıma gelen.
   </p>
   <h3>monografi</h3>
   <p>
@@ -66,18 +93,23 @@
   </p>
   <h3>sabit bir model ve kurallar sistemi</h3>
   <p>
-    bu başlığın altını herhangi bir `sabit bir model ve kurallar sistemi` ile doldurabiliriz. örnekler: matematik, öklid geometrisi, python, esperanto, kuş dili, kürtçe, lehçe. bu örneklerin taşıdıkları ortak bir özellikleri var; hiçbirinin dil olgusu tanımı ile çelişmiyor olması. kürtçe, lehçe, matematik ve kuş dili doğal diller diye sınıflandırılabilir. python ve esperanto, öklid geometrisi için ise yapay diller diyebiliriz. 
+    bu başlığın altını herhangi bir <code>sabit bir model ve kurallar sistemi</code> ile doldurabiliriz. 
   </p>
-  <p>bu sistemler içlerinde aksiyom adı verilen kanıtlanamaz önermeler barındırırlar. aksiyomlar kanıtlanamayan önermelerdir. öklid geometrisinin `bütün dik açılar eşittir` şeklinde bir kuralı vardır, ancak günlük hayatımızda bütün dik açıların eşit olduğunu kanıtlayabilmek mümkün değildir.</p>
+  <p>örnekler: matematik, öklid geometrisi, python, esperanto, kuş dili, kürtçe, lehçe. bu örneklerin taşıdıkları ortak bir özellikleri var; hiçbirinin dil olgusu tanımı ile çelişmiyor olması. kürtçe, lehçe, matematik ve kuş dili doğal diller diye sınıflandırılabilir. python ve esperanto, öklid geometrisi için ise yapay diller diyebiliriz. 
+  </p>
+  <p>bu sistemler içlerinde aksiyom adı verilen kanıtlanamaz önermeler barındırırlar. aksiyomlar kanıtlanamayan önermelerdir. öklid geometrisinin <code>bütün dik açılar eşittir</code> şeklinde bir kuralı vardır, ancak günlük hayatımızda bütün dik açıların eşit olduğunu kanıtlayabilmek mümkün değildir.</p>
   <p>
     bir programlama dili sadece bilgisayarlar tarafından değil, insanlar tarafından da yorumlanabilen bir dildir. bu diller aynı şekilde bir grup ya da kişiler arasında iletişim kurmak için kullanılabilmektedir; ki zaten ekseriye bir grup tarafından geliştirilmişlerdir.
   </p>
   <h3>hadi programlama dilinde konuşalım</h3>
   <p>
-    bir kitleye (medya takipçileri, topluluklar) test-edebilecekleri bir ileti göndermek için programlama dilleri pek sık kullanılmaktadır. bunlara explorable denmekte. türkçe olarak ben keşfedilebilirler diyeceğim. bu keşfedilebilirler internet üzerinden çok rahat bir şekilde incelenilebilir. benim en sevdiklerimi yayınlar: bl.ocks.org ve ncase.me
+    bir kitleye (medya takipçileri, topluluklar) test-edebilecekleri bir ileti göndermek için programlama dilleri pek sık kullanılmaktadır. bunlara explorable denmekte. türkçe olarak ben keşfedilebilirler diyeceğim. bu keşfedilebilirler internet üzerinden çok rahat bir şekilde incelenilebilir. en sevdiğim yayınlar: <a href="//bl.ocks.org">bl.ocks.org</a> ve <a href="//ncase.me">ncase.me</a>
   </p>
   <p>
-    ben de vakit buldukça keşfedilebilirler üretmeye çalışmaktayım. bir dil evrimi modeli, halı deseni üreteçi, asparagas haber yayılma simülasyonu, ve sevdiğim bir ressamın tablosunun kodlanmış halini örnek olarak gösterebilirim.
+    vakit buldukça keşfedilebilirler üretmeye çalışmaktayım.
+      
+    <a href="/language-evolution-simulation">bir dil evrimi modeli</a>, <a href="/kilim-motifs">halı deseni üreteçi</a>, <a href="/post-truth">asparagas haber yayılma simülasyonu</a>, ve
+    <a href="/malevich">sevdiğim bir ressamın tablosunun kodlanmış halini</a> örnek olarak gösterebilirim.
   </p>
   <p>
     programlama dillerini sadece iş-amaçlı kullanmayıp günlük hayatımızda da yer edindirebilirsek daha sağlıklı bir iletişim kurabileceğimize inanıyorum. özellikle bir topluluk içerisinde önemli bir karar alınırken sosyogramlar, agent-bazlı modellemeler, simülasyonlar ya da oyunlar sadece bir programlama dili ile 1-2 saatlik bir programlama-hikayeleştirme ile üretilebilir.
@@ -89,7 +121,7 @@
   <p>örnek: bir yalan haberin yayılması ile grip virüsünün yayılması gerçek hayatta muhtemelen aynı şekilde yayılmasa da; biz grip virüsünün nasıl yayıldığını daha iyi ölçebildiğimiz için, grip virüsü yayılımı modelini kullanabiliriz.</p>
   <h3>bu paragraftan sonra git-commit yapacağım</h3>
   <p>bu sayfayı ileride üreteceğim keşfedilebilirlerin indeksi olarak kullanmayı düşünüyorum ve muhtemelen sürekli anasayfa olarak kalacak. umarım bu sefer çok fazla ara vermeden bir sonraki blog yazısını yayınlayabilirim.</p>
-  <p>eğer o aslında öyle değil dediğiniz yerler olmuşsa fatiherikli@gmail.com ya da @fthrkl adreslerinden benimle iletişebilirsiniz.</p>
+  <p>eğer o aslında öyle değil dediğiniz yerler olmuşsa <a href="mailto:fatiherikli.com">fatiherikli@gmail.com</a> ya da <a href="//twitter.com/fthrkl">@fthrkl</a> adreslerinden benimle konuşabilirsiniz.</p>
   <p>teşekkürler!</p>
   </section>
 </body>
